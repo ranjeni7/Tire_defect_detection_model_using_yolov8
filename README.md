@@ -1,7 +1,4 @@
 README.md
-markdown
-Copy
-Edit
 # Tire Defect Detection Model Using YOLOv8
 
 This project implements a tire defect detection system using the YOLOv8 object detection model. It is designed to automatically identify defects in tire images, helping to improve quality control in manufacturing and maintenance.
@@ -35,16 +32,10 @@ The model can assist automotive industries and maintenance teams by providing fa
    cd Tire_defect_detection_model_using_yolov8
 Create and activate a Python virtual environment (optional but recommended):
 
-bash
-Copy
-Edit
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install dependencies:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 The main dependencies include ultralytics (for YOLOv8), opencv-python, numpy, and other common ML libraries.
 
@@ -52,16 +43,10 @@ Usage
 Training the model
 Modify the configuration and dataset paths in the training script if needed. Then run:
 
-bash
-Copy
-Edit
 python train.py --data tire_dataset.yaml --epochs 50 --batch 16 --img 640
 Running inference
 To test the trained model on new images or videos:
 
-bash
-Copy
-Edit
 python detect.py --weights runs/train/exp/weights/best.pt --source path_to_test_images/
 Results
 The trained YOLOv8 model achieves high precision and recall for defect detection.
@@ -70,9 +55,6 @@ Confusion matrices, loss curves, and sample inference images are provided in the
 
 Contributing
 Contributions and suggestions are welcome! Feel free to open issues or pull requests.
-
-License
-This project is licensed under the MIT License.
 
 Contact
 Author: Ranjeni C
