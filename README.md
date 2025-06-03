@@ -31,22 +31,22 @@ The model can assist automotive industries and maintenance teams by providing fa
    git clone https://github.com/ranjeni7/Tire_defect_detection_model_using_yolov8.git
    cd Tire_defect_detection_model_using_yolov8
 Create and activate a Python virtual environment (optional but recommended):
-
+```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
 The main dependencies include ultralytics (for YOLOv8), opencv-python, numpy, and other common ML libraries.
 
 Usage
 Training the model
 Modify the configuration and dataset paths in the training script if needed. Then run:
-
+```bash
 python train.py --data tire_dataset.yaml --epochs 50 --batch 16 --img 640
 Running inference
 To test the trained model on new images or videos:
-
+```bash
 python detect.py --weights runs/train/exp/weights/best.pt --source path_to_test_images/
 Results
 The trained YOLOv8 model achieves high precision and recall for defect detection.
